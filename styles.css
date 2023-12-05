@@ -1,43 +1,45 @@
-
 /*Custom properties*/
 :root {
-    /* Fonts*/
-    --ff-primary: 'Exo', sans-serif;
-    --ff-main: 'Hedvig Letters Sans', sans-serif;
-    font-family: 'Hedvig Letters Serif', serif;
-    font-family: 'Roboto', sans-serif;
-    --ff-secondary: 'Roboto Slab', serif;
+  /* Fonts*/
+  --ff-primary: "Exo", sans-serif;
+  --ff-main: "Hedvig Letters Sans", sans-serif;
+  font-family: "Hedvig Letters Serif", serif;
+  font-family: "Roboto", sans-serif;
+  --ff-secondary: "Roboto Slab", serif;
 
-    /*Colors*/
-    --clr-dark: rgb(18, 14, 10);
-    --clr-primary:rgb(56, 255, 20); 
-    --clr-white: rgb(255, 255, 255);
+  /*Colors*/
+  --clr-dark: rgb(18, 14, 10);
+  --clr-primary: rgb(56, 255, 20);
+  --clr-white: rgb(255, 255, 255);
+  --clr-red: rgb(255, 80, 41);
+  --clr-outline: #e2333b;
+  --clr-shadow: #a32128;
+  --clr-shadow2: #3f0716;
 
-    /*Font size*/
-    --fs-xlarge: 5rem;
-    --fs-large: 3.5rem;
-    --fs-larger: 1.5rem;
-    --fs-normal: 1rem;
-    --fs-small: 0.875rem;
+  /*Font size*/
+  --fs-xlarge: 5rem;
+  --fs-large: 3.5rem;
+  --fs-larger: 1.5rem;
+  --fs-normal: 1rem;
+  --fs-small: 0.875rem;
 }
 /* 560px*/
-@media (min-width: 35em){
-   :root {
+@media (min-width: 35em) {
+  :root {
     --fs-large: 5rem;
     --fs-larger: 2.5rem;
     --fs-normal: 1.5rem;
     --fs-small: 1rem;
-   } 
-    
+  }
 }
 @media (min-width: 45em) {
-    /* 720px biggest tablet */
-    :root {
-      --fs-large: 6.25rem;
-      --fs-larger: 3.5rem; /* to get rem values divide given px values from 16*/
-      --fs-normal: 1.75rem;
-      --fs-small: 1.125rem;
-    }
+  /* 720px biggest tablet */
+  :root {
+    --fs-large: 6.25rem;
+    --fs-larger: 3.5rem; /* to get rem values divide given px values from 16*/
+    --fs-normal: 1.75rem;
+    --fs-small: 1.125rem;
+  }
 }
 
 /* CSS Reset*/
@@ -79,7 +81,7 @@ p {
 body {
   font-family: var(--ff-main);
   font-size: var(--fs-normal);
-  color:var(--clr-white);
+  color: var(--clr-white);
   background-color: var(--clr-dark);
   line-height: 1.5; /* broser standart usually 1.4*/
   min-height: 100vh;
@@ -121,42 +123,48 @@ select {
 
 /* Accessibility user styles*/
 .skip-to-content {
-    position: absolute;
-    z-index: 2500;
-    background: hsl(var(--clr-white));
-    color:var(--clr-light); 
-    padding: 0.5rem 1em;
-    margin-inline: auto;
-    /* to hide from screen */
-    transform: translateY(-100%);
-    transition: transform 250ms ease-in;
-  }
-  .skip-to-content:focus {
-    transform: translateY(0);
-  }
-  .sr-only {
-    position: absolute; /* settings for screen-reader elements
+  position: absolute;
+  z-index: 2500;
+  background: hsl(var(--clr-white));
+  color: var(--clr-light);
+  padding: 0.5rem 1em;
+  margin-inline: auto;
+  /* to hide from screen */
+  transform: translateY(-100%);
+  transition: transform 250ms ease-in;
+}
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+.sr-only {
+  position: absolute; /* settings for screen-reader elements
                                   we dont see them on page but they are in DOM.*/
-    width: 1px;
-    height: 1px; /* Display: none removes them from DOM as well as page*/
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line*/
-    border: 0;
-  }
+  width: 1px;
+  height: 1px; /* Display: none removes them from DOM as well as page*/
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line*/
+  border: 0;
+}
 
 /* Nav bar*/
+
+.home {
+  background-image: url(./Assets/Images/Tatoo_artist.webp);
+  background-size: cover;
+  background-position: center;
+}
 
 .navbar {
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color:var(--clr-dark);
-  color:var(--clr-primary);
-  font-family: 'Roboto Slab';
+  background-color: var(--clr-dark);
+  color: var(--clr-primary);
+  font-family: "Roboto Slab";
 }
 
 .brand-title {
@@ -203,22 +211,51 @@ select {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color:var(--clr-primary);
+  background-color: var(--clr-primary);
   border-radius: 10px;
-} 
-.home {
-    background-image: url(./Assets/Images/Tatoo_artist.webp);
-    background-size: cover;
-    background-position: center;
-
 }
+
+/*Home page*/
+h1 {
+  margin-top: 5rem;
+}
+h1 span {
+  display: block;
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-xlarge);
+    color: var(--clr-white);  
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -5px;
+  text-shadow: -1px -1px 0 var(--clr-outline), 1px -1px 0 var(--clr-outline),
+    -1px 1px 0 var(--clr-outline), 1px 1px 0 var(--clr-outline), 0 0 2px #f9c2af,
+    0 0 14px var(--clr-shadow), 0 0 10px var(--clr-shadow),
+    0 0 13px var(--clr-shadow), 0 0 20px var(--clr-shadow2);
+
+  line-height: 0.9;
+  transform: scale(0.9, 1);
+
+  /* background-size: cover;
+  background-position: center;
+  background-size: 100%;
+  text-transform: uppercase;
+  /* to put image into text*/
+  /*to work with chrome and safari*/
+  /*-webkit-background-clip: text;
+  /*to work with firefox*/
+  /*background-clip: text;
+  color: transparent;
+  margin: 0 auto; */
+  padding-top: 1rem;
+}
+
 @media (max-width: 800px) {
   .home {
     background-image: url(./Assets/Images/Tatoo_artist1.jpg);
     background-size: cover;
     background-position: center;
-
-}
+  }
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -249,14 +286,12 @@ select {
   .navbar-links.active {
     display: flex;
   }
-  .toggle-button.active .bar{
+  .toggle-button.active .bar {
     transform: translate(-100%);
-
-  } 
+  }
   .toggle-button.active {
     background-image: url(./Assets/Images/x-solid.svg);
     background-repeat: no-repeat;
-    padding:1rem;
-    
+    padding: 1rem;
   }
 }
