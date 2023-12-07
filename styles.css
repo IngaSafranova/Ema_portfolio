@@ -120,7 +120,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Accessibility user styles*/
 .skip-to-content {
   position: absolute;
@@ -148,7 +150,9 @@ select {
   white-space: nowrap; /* added line*/
   border: 0;
 }
-
+section {
+  height: 100vh;
+}
 /* Nav bar*/
 
 .home {
@@ -259,7 +263,8 @@ h1 span {
 }
  .social-list__item {
   
-  size: 48px;
+  width: 48px;
+  height: 48px;
   margin: .5rem;
 }
  .social-list__link {
@@ -284,6 +289,13 @@ h1 span {
   text-align: center;
   padding: 0.25em 0;
 }
+
+/*About-tatoo*/
+.about-tatoo {
+  background:var(--clr-dark);
+  font-family: var(--ff-secondary);
+}
+
 @media (max-width: 800px) {
   .home {
     background-image: url(./Assets/Images/Tatoo_artist1.jpg);
