@@ -165,6 +165,10 @@ h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
+.logo {
+  width: auto;
+  filter: none;
+}
 /* Nav bar*/
 
 .home {
@@ -218,10 +222,13 @@ height: 100%;
 .navbar-links a:hover,
 .navbar-links li:focus
  {
-  padding-bottom: .5rem;
+   padding-bottom: .5rem;
   
-  border-bottom: 1px solid var(--clr-primary);
-}
+  border-bottom: 1px solid var(--clr-primary); 
+ }
+  /* transform: scale(1.2);
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in-out;  
+} */
 
 .toggle-button {
   position: absolute;
@@ -233,7 +240,9 @@ height: 100%;
   width: 30px;
   height: 21px;
 }
-
+.brand-title {
+  margin: 0;
+}
 
 
 /*Home page*/
@@ -285,8 +294,8 @@ h1 span {
   margin-inline: .5rem;
 }
  .social-list__item:hover {
-  transform: scale(1.2);
-  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in-out;  
+   transform: scale(1.2);
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in-out;   
 
  }
   img {
@@ -410,4 +419,11 @@ justify-content: space-evenly;
     background-repeat: no-repeat;
     padding: 1rem;
   }
+  .navbar-links a:hover,
+.navbar-links li:focus
+ {
+  
+  transform: scale(1.2);
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in-out;  
+}
 }
