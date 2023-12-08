@@ -152,11 +152,18 @@ html {
   border: 0;
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
   padding-inline: 1rem;
 }
 .flex {
   display: flex;
+}
+.toUpperCase {
+  text-transform: uppercase;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 /* Nav bar*/
 
@@ -279,24 +286,52 @@ h1 span {
 } 
   img {
   
-  width: 50px;
-  height: 50px;
-    filter: drop-shadow(2px 2px 2px var(--clr-outline));   
+  width: 100%;
+  height: 100%;
+ filter: drop-shadow(2px 2px 2px var(--clr-outline));    
 } 
+.img {
+  width: 100px;
+}
 .tatoo-img {
-
+width: 100px;
     filter: contrast(.1); 
 }
-.about-tatoo {
+.photo {
+  width: auto;
+  filter: none;
+  border:5px solid var(--clr-white);
+  margin: .5rem;
+  
+}
+.about-tatoo, .galery {
   flex-direction: column;
   padding-block: 3rem;
   text-align: center;
+  border-top: 3px ridge var(--clr-primary);
+  background-color: var(--clr-dark);
  
 }
 .tatoo {
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
 }
+.tatoo img {
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+.tatoo-info-last{
+  margin-bottom: 2rem;
+}
+/*Galery*/
+.photo-galery {
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+/*Footer*/
 .footer {
   position: fixed;
   left: 0;
