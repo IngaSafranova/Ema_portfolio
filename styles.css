@@ -215,8 +215,12 @@ height: 100%;
   font-size: var(--fs-small);
 }
 
-.navbar-links li:hover {
-  background-color: #555;
+.navbar-links a:hover,
+.navbar-links li:focus
+ {
+  padding-bottom: .5rem;
+  
+  border-bottom: 1px solid var(--clr-primary);
 }
 
 .toggle-button {
@@ -277,13 +281,10 @@ h1 span {
   
   width: 48px;
   height: 48px;
-  margin: .5rem;
+  margin-block: 1.5rem;
+  margin-inline: .5rem;
 }
- .social-list__link {
-  padding: 1rem;
-  
-  
-} 
+ 
   img {
   
   width: 100%;
