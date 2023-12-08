@@ -253,7 +253,7 @@ h1 span {
   line-height: 0.9;
   transform: scale(0.9, 1);
 
-  /* background-size: cover;
+   background-size: cover;
   background-position: center;
   background-size: 100%;
   text-transform: uppercase;
@@ -261,9 +261,9 @@ h1 span {
   /*to work with chrome and safari*/
   /*-webkit-background-clip: text;
   /*to work with firefox*/
-  /*background-clip: text;
+  background-clip: text;
   color: transparent;
-  margin: 0 auto; */
+  margin: 0 auto; 
   padding-top: 1rem;
 }
 .social-list {
