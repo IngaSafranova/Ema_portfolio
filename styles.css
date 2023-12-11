@@ -279,13 +279,14 @@ h1 span {
   margin: 0 auto; 
   padding-top: 1rem; */
 }
-.social-list {
+.social-list, .social-list__contact {
   list-style: none;
   display: flex;
   justify-content: center;
   margin: 1em 0 0;
   padding: 0;
 }
+
  .social-list__item {
   
   width: 48px;
@@ -318,7 +319,7 @@ width: 100px;
   margin: .5rem;
   
 }
-.about-tatoo, .galery {
+.about-tatoo, .galery,.contact-me {
   flex-direction: column;
   padding-block: 3rem;
   text-align: center;
@@ -338,12 +339,20 @@ width: 100px;
   margin-bottom: 1rem;
 }
 .tatoo-info-last{
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 /*Galery*/
 .photo-galery {
 flex-wrap: wrap;
 justify-content: space-evenly;
+}
+.contact-me {
+  display: flex;
+
+  justify-content: center;
+}
+.tatoo-aftercare{
+  padding-bottom: 5rem;
 }
 /*Footer*/
 .footer {
@@ -364,7 +373,17 @@ justify-content: space-evenly;
   font-family: var(--ff-secondary);
 
 }
-
+/*Aftercare*/
+.tatoo-aftercare li {
+  text-align: justify;
+  padding-right: 1rem;
+  /* to make bullet points green*/
+  color:var(--clr-primary);
+}
+/* to make text white*/
+.tatoo-aftercare span {
+  color: white;
+}
 @media (max-width: 800px) {
   .home {
     background-image: url(./Assets/Images/Tatoo_artist1.jpg);
