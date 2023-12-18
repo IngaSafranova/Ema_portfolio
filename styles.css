@@ -387,7 +387,7 @@ img {
 }
 @media (max-width: 800px) {
   .home {
-    background-image: url(./Assets/Images/Tatoo_artist1.jpg);
+    background-image: url(./Assets/Images/Tatoo_artist1.webp);
     background-size: cover;
     background-position: center;
   }
