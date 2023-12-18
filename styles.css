@@ -8,7 +8,7 @@
   --ff-secondary: "Roboto Slab", serif;
 
   /*Colors*/
-  --clr-dark: rgb(18, 14, 10);
+  --clr-dark: rgb(0,0,0);
   --clr-primary: rgb(56, 255, 20);
   --clr-white: rgb(255, 255, 255);
   --clr-red: rgb(255, 80, 41);
@@ -221,9 +221,6 @@ h2 {
 
   border-bottom: 1px solid var(--clr-primary);
 }
-/* transform: scale(1.2);
-  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in-out;  
-} */
 
 .toggle-button {
   position: absolute;
