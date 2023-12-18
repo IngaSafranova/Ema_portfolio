@@ -21,7 +21,6 @@
   --fs-large: 3.5rem;
   --fs-larger: 1.5rem;
   --fs-normal: 1.1rem;
-
 }
 /* 560px*/
 @media (min-width: 35em) {
@@ -85,7 +84,7 @@ body {
   background-color: var(--clr-dark);
   line-height: 1.5; /* broser standart usually 1.4*/
   min-height: 100vh;
- 
+
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -169,6 +168,7 @@ h2 {
   width: auto;
   filter: none;
 }
+
 /* Nav bar*/
 
 .home {
@@ -193,26 +193,22 @@ h2 {
 }
 
 .navbar-links {
-height: 100%;
-
-
+  height: 100%;
 }
 
 .navbar-links ul {
   display: flex;
   margin: 0;
   padding: 1rem;
-  
 }
 
 .navbar-links li {
   list-style: none;
- 
 }
 
 .navbar-links li a {
   display: block;
- 
+
   text-decoration: none;
   color: var(--clr-primary);
   padding: 1rem;
@@ -220,13 +216,12 @@ height: 100%;
 }
 
 .navbar-links a:hover,
-.navbar-links li:focus
- {
-   padding-bottom: .5rem;
-  
-  border-bottom: 1px solid var(--clr-primary); 
- }
-  /* transform: scale(1.2);
+.navbar-links li:focus {
+  padding-bottom: 0.5rem;
+
+  border-bottom: 1px solid var(--clr-primary);
+}
+/* transform: scale(1.2);
   transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in-out;  
 } */
 
@@ -244,7 +239,6 @@ height: 100%;
   margin: 0;
 }
 
-
 /*Home page*/
 h1 {
   margin-top: 5rem;
@@ -254,7 +248,7 @@ h1 span {
   text-align: center;
   font-family: var(--ff-primary);
   font-size: var(--fs-xlarge);
-    color: var(--clr-white);  
+  color: var(--clr-white);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -5px;
@@ -266,66 +260,73 @@ h1 span {
   line-height: 0.9;
   transform: scale(0.9, 1);
 
-   background-size: cover;
+  background-size: cover;
   background-position: center;
   background-size: 100%;
   text-transform: uppercase;
-  /* to put image into text*/
-  /*to work with chrome and safari*/
-  /*-webkit-background-clip: text;
-  /*to work with firefox*/
-  /* background-clip: text;
-  color: transparent;
-  margin: 0 auto; 
-  padding-top: 1rem; */
+  
 }
-.social-list, .social-list__contact {
+.social-list,
+.social-list__contact {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 1em 0 0;
-  padding: 0;
+  margin: 0;
+  padding: 2rem;
 }
 
- .social-list__item {
-  
-  width: 48px;
-  height: 48px;
-  margin-block: 1.5rem;
-  margin-inline: .5rem;
+.social-list__item {
+  width: 60px;
+  height: 60px;
 }
- .social-list__item:hover {
-   transform: scale(1.2);
-  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in-out;   
+.social-list__item:hover {
+  transform: scale(1.2);
+  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1),
+    opacity 250ms ease-in-out;
+}
+.wrapper {
+  display: grid;
 
- }
-  img {
-  
+  justify-content: center;
+  margin-top: 2rem;
+}
+img {
   width: 100%;
   height: 100%;
- filter: drop-shadow(2px 2px 2px var(--clr-outline));    
-} 
+  filter: drop-shadow(2px 2px 2px var(--clr-outline));
+}
 .img {
   width: 100px;
 }
 .tatoo-img {
-width: 100px;
-    filter: contrast(.1); 
+  width: 100px;
+  filter: contrast(0.1);
+}
+.img-contact {
+  display: block;
+  width: 50px;
+  height: 50px;
+  
+  justify-self: center;
+}
+.img-envelope {
+  margin-top: 1rem;
 }
 .photo {
-  width: auto;
+  width: 300px;
+  height: auto;
   filter: none;
-  border:5px solid var(--clr-white);
-  margin: .5rem;
-  
+  border: 5px solid var(--clr-white);
+  margin: 0.5rem;
 }
-.about-tatoo, .galery,.contact-me {
+.about-tatoo,
+.galery,
+.contact-me {
   flex-direction: column;
   padding-block: 3rem;
   text-align: center;
   border-top: 3px ridge var(--clr-primary);
   background-color: var(--clr-dark);
- 
 }
 .tatoo {
   flex-direction: column;
@@ -338,20 +339,20 @@ width: 100px;
   align-self: center;
   margin-bottom: 1rem;
 }
-.tatoo-info-last{
+.tatoo-info-last {
   margin-bottom: 4rem;
 }
 /*Galery*/
 .photo-galery {
-flex-wrap: wrap;
-justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .contact-me {
   display: flex;
 
   justify-content: center;
 }
-.tatoo-aftercare{
+.tatoo-aftercare {
   padding-bottom: 5rem;
 }
 /*Footer*/
@@ -361,7 +362,7 @@ justify-content: space-evenly;
   bottom: 0;
   width: 100%;
   font-size: var(--fs-small);
-  background:var(--clr-dark);
+  background: var(--clr-dark);
   color: var(--clr-primary);
   text-align: center;
   padding: 0.25em 0;
@@ -369,16 +370,16 @@ justify-content: space-evenly;
 
 /*About-tatoo*/
 .about-tatoo {
-  background:var(--clr-dark);
+  background: var(--clr-dark);
   font-family: var(--ff-secondary);
-
 }
+
 /*Aftercare*/
 .tatoo-aftercare li {
   text-align: justify;
   padding-right: 1rem;
   /* to make bullet points green*/
-  color:var(--clr-primary);
+  color: var(--clr-primary);
 }
 /* to make text white*/
 .tatoo-aftercare span {
@@ -391,34 +392,27 @@ justify-content: space-evenly;
     background-position: center;
   }
   .navbar {
-     flex-direction: column;
-    align-items: flex-start; 
-    
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .toggle-button {
     display: flex;
-  
   }
 
   .navbar-links {
-     display: none;
+    display: none;
     width: 100%;
     height: 100vh;
-    
   }
 
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
- 
-    
-    
   }
 
   .navbar-links ul li {
     text-align: center;
-    
   }
 
   .navbar-links ul li a {
@@ -439,10 +433,9 @@ justify-content: space-evenly;
     padding: 1rem;
   }
   .navbar-links a:hover,
-.navbar-links li:focus
- {
-  
-  transform: scale(1.2);
-  transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms ease-in-out;  
-}
+  .navbar-links li:focus {
+    transform: scale(1.2);
+    transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1),
+      opacity 250ms ease-in-out;
+  }
 }
