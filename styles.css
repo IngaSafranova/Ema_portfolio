@@ -206,7 +206,8 @@ h2 {
   list-style: none;
 }
 
-.navbar-links li a {
+.navbar-links li a ,
+.footer-link{
   display: block;
 
   text-decoration: none;
